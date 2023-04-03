@@ -5,7 +5,6 @@ require_once "../models/curso.php";
 
 //Verificar si existe operacion en curso
 // GET - POST - REQUEST
-
 if (isset($_POST['operacion'])){
 
   //Instancia de la clase curso

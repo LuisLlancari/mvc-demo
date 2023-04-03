@@ -1,5 +1,5 @@
 <?php
-
+ // CLASE "es una plantilla" => con eso creamos objetos | Compone => Atributos, metodos(verbo)
 class Curso{
   
   //Atributo
@@ -45,7 +45,7 @@ class Curso{
   public function listarCursos(){
     return $this->data;
   }
-  //
+  
   
 
 }
