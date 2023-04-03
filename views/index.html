@@ -55,9 +55,36 @@
       function mostrarDatos(){
         //Comunicación asíncrona/ AJAX con el controlador
         $.ajax({
-          
-        });
-      }
+          url: '../controllers/curso.controller.php',
+          type: 'POST',
+          data: {
+            operacion: 'listar'
+          },
+          dataType: 'JSON',
+          //recive un resultado en una funcion
+          success: function(result){
+            if (result.length > 0){
+              //console.log(result);
+              const listaCursos = result;
+              // Antes de ejecutar el corrido de resgistros, reiniciar la tabla
+
+              $("#table-cursos tbody").html("");
+
+              listaCursos.forEach(curso => {
+                let nuevaFila = ``;
+                nuevaFila += `<tr>`;
+                nuevaFila += `<td>${curso['id']}</td>`;
+                nuevaFila += `<td>${curso['nombre']}</td>`;
+                nuevaFila += `<td>${curso['nivel']}</td>`;
+                nuevaFila += `<td>${curso['precio']}</td>`;
+                nuevaFila += `<td>${curso['horas']}</td>`;
+                nuevaFila += `</tr>`;
+                $("#table-cursos tbody").append(nuevaFila);
+              });
+            }
+          }//Fin success
+        });//Fin de AJAX
+      } //Fin mostarDatos
 
       // controlamos el boton
       $("#cargar-datos").click(mostrarDatos);

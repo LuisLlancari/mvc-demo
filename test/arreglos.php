@@ -15,7 +15,7 @@ $aplicaciones = [
 
 ];
 //Obtener VScode
-echo $aplicaciones[1] [0]; //1 = indice arreglo, 0 =índice de valor
+echo $aplicaciones[1][0]; //1 = indice arreglo, 0 =índice de valor
 //Obtener Muse
 echo $aplicaciones[0][3];
 //Obtener SAP
