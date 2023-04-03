@@ -1,0 +1,35 @@
+{
+  "infopersonal": {
+    "datos" : {
+      "apellidos" : "Llancari",
+      "nombre"    : "Luis",
+      "edad"      :38,
+      "telefono"  :"93234234"
+    },
+    "mifamilia" :{
+      "hermano"       : ["junior","Jen"],
+      "primos"        : ["carlos","pablo"]
+    }
+  },
+  "formacion": {
+    "primaria"        : ["I.E San Agustin"],
+    "secundaria"      : ["I.E San Agustin"],
+    "superio"         : ["SENATI"]
+  },
+  "skill":   {
+    "deportivas"        : {
+      "futbol"          : ["Equipo A", "Equipo B","Equipo c"]
+    },
+    "sociales"          : {
+      "intrapersonales" : ["autcontrol","autoestima","resiliencia"],
+      "interpesonales"  : ["liderazgo","trabajo en equipo"]
+    },
+    "profesionales"     : {
+      "programador"     : {
+        "lenguajes"     : ["PHP", "dsad","C++","Python","Js","CSS","SQl"],
+        "basedatos"     : ["MySQL", "MS SQL Server", "Ocracle DB"]
+      }
+
+    }
+  }
+}
